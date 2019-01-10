@@ -1,7 +1,9 @@
+
 let money = +prompt("Ваш бюджет на месяц?", 0);
 let time = prompt("Введите дату в формате YYYY-MM-DD", '');
 
 let appData = {};
+
 
 appData.budget = money;
 appData.timeData = time;
@@ -24,25 +26,18 @@ for (let i=0; i < 2; i++){
 };
 
 // Другая реализация цикла
+
 // let i = 0;
 // while (i < 2){
 //     let key = prompt("Введите обязательную статью расходов в этом месяце", '');
 //     let value = +prompt("Во сколько обойдется?", 0);   
-    
-//     if((typeof(key)) === 'string' && key.length < 50 
-//     && (typeof(key)) != null && (typeof(value)) != null && key != '' && value != ''){
-//         console.log("done");
-//         appData.expenses[key] = value;
-//         i++;
-//     } else {
-//         if (i <= 0) continue;
-//         i--;
-//     }
-// }
-// Другая реализация цикла
+
+
+
 // let i = 0;
 // do {let key = prompt("Введите обязательную статью расходов в этом месяце", '');
 // let value = +prompt("Во сколько обойдется?", 0);   
+
 
 // if((typeof(key)) === 'string' && key.length < 50 
 // && (typeof(key)) != null && (typeof(value)) != null && key != '' && value != ''){
@@ -68,4 +63,6 @@ if (appData.budgetPerDay < 100){
     console.log("Произошла ошибка");
 }
 
+
 console.log(appData);
+
