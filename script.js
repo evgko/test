@@ -103,6 +103,7 @@ function detectLevel() {
     }
 }
 
+
 detectLevel();
 
  console.log(appData);
